@@ -1,0 +1,144 @@
+$alignment: center;
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media(min-width:700px) {
+    #mob {
+        display: none;
+    }
+}
+
+@media(max-width:699px) {
+    #pc {
+        display: none;
+    }
+}
+
+.nav {
+    a {
+        color: white;
+        font-size: 8mm;
+        padding: 10px;
+        text-decoration: none;
+        text-align: $alignment;
+    }
+}
+
+a:hover {
+    color: #E47A63;
+}
+
+#avatar {
+    border-radius: 50%;
+    padding: 10px;
+    float: left;
+}
+
+#title {
+    margin-left: 50px;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(-90deg, black, rgb(41, 37, 37));
+}
+
+%inherittext {
+    font-size: 6mm;
+    text-align: $alignment;
+    color: gray;
+}
+
+#aboutme,
+#text {
+    @extend %inherittext;
+    margin-top: 30px;
+
+}
+
+#contact {
+    @extend %inherittext;
+    margin-top: 200px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+a.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: $alignment;
+    text-decoration: none;
+    margin: 25px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+#list {
+    margin: 50px 200px 100px 400px;
+    text-align: $alignment;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+#list td,
+#list th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 20px;
+}
+
+.likes {
+    list-style: none;
+
+}
+
+#lbutton {
+    color: black;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 12%;
+    padding: 5px;
+    width: 80px;
+}
+
+#More {
+    margin-top: 500px;
+}
+
+#cross:hover #lbutton {
+    background-color: lightcoral;
+}
+
+#alert {
+    display: none;
+}
+
+#cross:visited #alert {
+    display: block;
+    background-color: lightcoral;
+}
