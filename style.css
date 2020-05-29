@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: url(https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-content {
+  padding: 50px;
+  margin-top: 50px;
+  background: rgba(10, 10, 10, 0.4);
+}
+
 @media (min-width: 700px) {
   #mob {
     display: none;
@@ -36,26 +48,23 @@ a:hover {
   margin-left: 50px;
 }
 
-body {
-  background-color: black;
-  background-image: -webkit-gradient(linear, right top, left top, from(black), to(#292525));
-  background-image: linear-gradient(-90deg, black, #292525);
-}
-
 #aboutme,
 #text, #contact {
   font-size: 6mm;
   text-align: center;
-  color: gray;
+  color: white;
 }
 
 #aboutme,
 #text {
   margin-top: 30px;
+  font-size: 4rem;
 }
 
 #contact {
   margin-top: 200px;
+  font-weight: 800;
+  font-size: 5rem;
 }
 
 .fa:hover {
