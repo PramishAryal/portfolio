@@ -12,12 +12,48 @@ body {
 #main-content {
   padding: 1%;
   margin-top: 1%;
-  background: rgba(10, 10, 10, 0.4);
+}
+
+.jumbotron {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.proj {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.proj-desc {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.left {
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+#text {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
 }
 
 #aboutme,
-#text, #contact {
-  font-size: 6mm;
+#text {
   text-align: center;
   color: white;
 }
@@ -25,23 +61,17 @@ body {
 #aboutme,
 #text {
   margin-top: 5%;
-}
-
-#contact {
-  margin-top: 5%;
-  font-weight: 800;
+  color: white;
 }
 
 @media (min-width: 700px) {
-  #text,
-  #contact {
-    font-size: 3rem;
+  #text {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 699px) {
-  #text,
-  #contact {
+  #text {
     font-size: 1rem;
   }
 }
@@ -56,7 +86,7 @@ a.fa {
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 25px 2px;
+  margin: 10px 3px;
   border-radius: 50%;
 }
 
@@ -81,21 +111,9 @@ a.fa {
 }
 
 #list {
-  margin: 50px 200px 100px 400px;
   text-align: center;
   border: 2px solid white;
   border-collapse: collapse;
-}
-
-#list td,
-#list th {
-  border: 1px solid white;
-  text-align: left;
-  padding: 20px;
-}
-
-.likes {
-  list-style: none;
 }
 
 #lbutton {
@@ -122,5 +140,68 @@ a.fa {
 #cross:visited #alert {
   display: block;
   background-color: lightcoral;
+}
+
+.footer {
+  background: #212529;
+  text-align: center;
+  font-size: 1rem;
+  height: 10%;
+  color: black;
+}
+
+.footer a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: steelblue;
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  color: black;
+}
+
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+#contact-me {
+  background: rgba(112, 128, 144, 0.616);
+  padding: 20px;
+}
+
+.form-row {
+  margin: 10px;
+}
+
+p {
+  background: slategray;
+  opacity: .8;
+  border-radius: 10px;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <div class="container"><a class="navbar-brand" href="index.html">A.Pramish</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +42,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="projects.html">Projects</a>
                             <a class="dropdown-item" href="pong.html">Pong</a>
+                            <a class="dropdown-item" href="Cman.html">C-man</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -51,17 +52,47 @@
             </div>
         </div>
     </nav>
-    <div class="container" id="main-content">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="images/Pong-preview.png" class="card-img-top" alt="Pong Preview">
-            <div class="card-body">
-                <h5 class="card-title">Pong</h5>
-                <p class="card-text">
-                    Well, this was my first project using the WinApi. Pong
-                </p>
-                <a href="pong.html" class="btn btn-primary">Learn More.</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Projects</h1>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="proj">
+            <div class="left">
+                <h2>Pong</h2>
+                This is my first lone project, done using only the WinApi.<br>
+                <a href="pong.html">
+                    <button type="button" class="btn btn-dark">Learn More...</button>
+                </a>
+            </div>
+            <div class="right">
+                <img src="images/Pong-preview.png" class="img-thumbnail">
             </div>
         </div>
+        <div class="proj">
+            <div class="left">
+                <h2>C-Man</h2>
+                This is my first project that I did with my friends as our sem-project. This was done entirely in the
+                console hence the ASCII "graphics".
+                <br>
+                <a href="Cman.html">
+                    <button type="button" class="btn btn-dark">Learn More...</button>
+                </a>
+            </div>
+            <div class="right">
+                <img src="images/Cman-preview.png" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+    <div class="footer bottom">
+        Pramish Aryal/Student<br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-reddit"></a>
+        <a href="#navbar"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </div>
 </body>
 

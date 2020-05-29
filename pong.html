@@ -16,11 +16,11 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    <title>Projects/Pong</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <div class="container"><a class="navbar-brand" href="index.html">A.Pramish</a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -38,6 +38,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="projects.html">Projects</a>
                             <a class="dropdown-item" href="pong.html">Pong</a>
+                            <a class="dropdown-item" href="Cman.html">C-man</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -47,8 +48,40 @@
             </div>
         </div>
     </nav>
-    <div class="container" id="main-content">
-
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Pong</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="proj-desc col-sm-6">
+                <p>
+                    So to learn game development (using actual graphics this time), I stumbled upon HandMade Hero, a
+                    live-stream done by Casey Muratori, where he is developing a game from scratch using c++ (well
+                    c-style c++). What he uses is just the win32 api and to me that was just mind blowing. No engines,
+                    no frameworks, no libraires, just plain old c++ (again c-style c++) and nothing more. This was the
+                    best thing I could've ever stumbled upon. So I watched him upto episode 8 or so. And then decided to
+                    code a pong game with the knowledge I gained.
+                </p>
+                <p>
+                    This made me learn two new things. One, I loved making games and two I still do not have enough
+                    grasp over c++. As I still can't get through episode 15. Things got big brain too fast for me, at
+                    least for now. I will return back to handmade yet again when I'm wiser or just when it clicks for
+                    me. So till then its time to learn a graphics library like SDL or even OpenGL.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/pong-game.png" alt="cman-game preview" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+    <div class="footer bottom">
+        Pramish Aryal/Student<br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-reddit"></a>
+        <a href="#navbar"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </div>
 </body>
 
