@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#main-content {
+  padding: 1%;
+  margin-top: 1%;
+  background: rgba(10, 10, 10, 0.4);
+}
+
+#aboutme,
+#text, #contact {
+  font-size: 6mm;
+  text-align: center;
+  color: white;
+}
+
+#aboutme,
+#text {
+  margin-top: 5%;
+}
+
+#contact {
+  margin-top: 5%;
+  font-weight: 800;
+}
+
+@media (min-width: 700px) {
+  #text,
+  #contact {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 699px) {
+  #text,
+  #contact {
+    font-size: 1rem;
+  }
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+a.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 25px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#list {
+  margin: 50px 200px 100px 400px;
+  text-align: center;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+#list td,
+#list th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 20px;
+}
+
+.likes {
+  list-style: none;
+}
+
+#lbutton {
+  color: black;
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-radius: 12%;
+  padding: 5px;
+  width: 80px;
+}
+
+#More {
+  margin-top: 500px;
+}
+
+#cross:hover #lbutton {
+  background-color: lightcoral;
+}
+
+#alert {
+  display: none;
+}
+
+#cross:visited #alert {
+  display: block;
+  background-color: lightcoral;
+}
+/*# sourceMappingURL=style.css.map */
