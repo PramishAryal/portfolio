@@ -14,26 +14,6 @@ body {
   background: rgba(10, 10, 10, 0.4);
 }
 
-@media (min-width: 700px) {
-  #mob {
-    display: none;
-  }
-}
-
-@media (max-width: 699px) {
-  #pc {
-    display: none;
-  }
-}
-
-.nav a {
-  color: white;
-  font-size: 8mm;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-}
-
 a:hover {
   color: #E47A63;
 }
@@ -49,8 +29,7 @@ a:hover {
 }
 
 #aboutme,
-#text,
-#contact {
+#text, #contact {
   font-size: 6mm;
   text-align: center;
   color: white;
@@ -58,14 +37,26 @@ a:hover {
 
 #aboutme,
 #text {
-  margin-top: 30px;
-  font-size: 4rem;
+  margin-top: 30%;
 }
 
 #contact {
-  margin-top: 200px;
+  margin-top: 10%;
   font-weight: 800;
-  font-size: 5rem;
+}
+
+@media (min-width: 700px) {
+  #text,
+  #contact {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 699px) {
+  #text,
+  #contact {
+    font-size: 1rem;
+  }
 }
 
 .fa:hover {
@@ -145,5 +136,4 @@ a.fa {
   display: block;
   background-color: lightcoral;
 }
-
 /*# sourceMappingURL=style.css.map */
