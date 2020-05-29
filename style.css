@@ -7,6 +7,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
 }
 
 #main-content {
@@ -143,11 +147,14 @@ a.fa {
 }
 
 .footer {
-  background: #212529be;
+  background: #22272bb9;
   text-align: center;
   font-size: 1.2rem;
   height: 10%;
   color: white;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .footer a {
